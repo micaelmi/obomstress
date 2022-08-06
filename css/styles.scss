@@ -1,0 +1,886 @@
+/*=========== RESET ==========*/
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+$primary: #E96199;
+$secondary: #404040;
+$tertiary: #382F5B;
+$font-color: #3b3c38;
+$line: #DDDDDD;
+$dark-line: #373743;
+$light: #FFFFFF;
+$sub-color: #ADABAB;
+$back-1: #EFEDED;
+$back-2: #F7F7F7;
+$back-3: #23232D;
+
+$font-g: 'Source Sans Pro',
+sans-serif;
+$font-p: 'Open Sans',
+sans-serif;
+$italic: 'Lora',
+serif;
+
+$transtion: all 0.4s ease-in-out;
+
+/*========== TEXT SELECTION ==========*/
+::-moz-selection {
+    color: $light;
+    background: $primary;
+}
+
+::selection {
+    color: $light;
+    background: $primary;
+}
+
+/*========== ESTILIZAÇÃO DA BARRA DE SCROLL ==========*/
+body::-webkit-scrollbar {
+    width: 14px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgba(192, 116, 116, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: $primary;
+    border-radius: 6px;
+    border: 2px solid $light;
+}
+
+//=========== ESTILIZAÇÃO DA PÁGINA =================
+
+h1,
+h2 {
+    font-family: $font-g;
+}
+
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+    font-family: $font-p;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 32px;
+    color: $light;
+    line-height: 39px;
+    padding: 5px 25px 15px 25px;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 36px;
+    color: $primary;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 18px;
+    color: $light;
+}
+
+p {
+    font-weight: 400;
+    font-size: 18px;
+    color: $font-color;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.rosa {
+    color: $primary;
+}
+
+.hide-m {
+    display: none;
+}
+
+.legenda {
+    font-size: 12px;
+    color: $sub-color;
+}
+
+
+.video-fundo {
+    position: absolute;
+    z-index: -20;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+}
+
+.video-fundo::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    content: '';
+    z-index: -950;
+    background: rgba(73, 79, 155, 0.513);
+}
+
+.hero {
+    background: rgba(0, 0, 0, 0.7) url(../img/background.webp);
+    background-blend-mode: darken;
+    background-position: left center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 24px;
+    z-index: 1;
+    position: relative;
+}
+
+.text-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.inscrever {
+    background-color: $primary;
+    color: $light;
+    font-family: $font-g;
+    font-size: 16px;
+    padding: 12px 22px;
+    border-radius: 10px;
+    transition: $transtion;
+    margin: 5px;
+
+    &:hover {
+        background-color: $light;
+        color: $primary;
+        border: 1px solid $primary;
+    }
+}
+
+.sub {
+    border-left: 1px solid $light;
+    padding: 0 10px;
+    margin: 25px;
+}
+
+.logo {
+    max-width: 150px;
+}
+
+.apresentacao {
+    background-color: $back-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sub-2 {
+    margin: 50px 30px 25px 30px;
+    padding: 0 10px 0 15px;
+    border-left: 1px solid $primary;
+
+    p {
+        line-height: 30px;
+    }
+}
+
+.hackear {
+    background-color: $light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+
+    h2 {
+        text-align: center;
+        padding: 25px 0;
+    }
+
+    p {
+        padding: 0 20px 0 20px;
+        line-height: 30px;
+    }
+}
+
+.ciclos {
+    img {
+        padding: 40px 40px 0 40px
+    }
+
+    margin-bottom: 40px;
+}
+
+.mitos-e-verdades {
+    background-color: $back-3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0;
+
+    img {
+        max-width: 100px;
+    }
+
+    h2 {
+        padding: 20px 45px;
+        text-align: center;
+    }
+
+    p {
+        color: $light;
+        font-family: $italic;
+        margin-top: 30px;
+        line-height: 30px;
+        padding: 0 35px;
+        text-align: center;
+    }
+}
+
+.eixos {
+    background-color: $light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 0 40px 0;
+    text-align: center;
+
+    h2 {
+        padding: 0 30px;
+    }
+
+    .itens {
+        margin-bottom: 40px;
+
+        .item {
+            margin-top: 50px;
+
+            img {
+                max-width: 60px;
+            }
+
+            p.titulo {
+                text-transform: uppercase;
+                font-weight: 600;
+                padding: 12px 0 4px 0;
+                color: #636360;
+            }
+        }
+    }
+}
+
+.aprender {
+    background-color: $back-3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 0 60px 0;
+
+    h2 {
+        color: $light;
+        text-align: center;
+        padding: 0 30px 20px 30px;
+    }
+
+    .linha {
+        height: 1px;
+        width: 90%;
+        background-color: $dark-line;
+        margin: 10px 30px;
+    }
+
+    p {
+        padding: 0 30px;
+        line-height: 30px;
+    }
+
+}
+
+.beneficios-conteudo {
+
+    .beneficios {
+        margin-bottom: 40px;
+    }
+
+    background-color: $back-2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 30px 60px 30px;
+
+    h2 {
+        margin-bottom: 40px;
+    }
+
+    p {
+        line-height: 30px;
+    }
+
+    .linha {
+        height: 1px;
+        width: 100%;
+        background-color: $line;
+        margin: 10px 0;
+    }
+}
+
+.facilitadora {
+    background-color: $light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 30px 60px 30px;
+
+    .foto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+
+        img {
+            max-width: 150px;
+        }
+    }
+
+    p.rosa {
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+
+    .linha {
+        height: 1px;
+        width: 100%;
+        background-color: $line;
+        margin: 10px 0;
+    }
+
+    p {
+        line-height: 30px;
+    }
+
+    .citacao {
+        padding: 65px 20px 20px 10px;
+        font-family: $italic;
+        color: #706D6D;
+        font-size: 20px;
+    }
+}
+
+.formatos {
+    background-color: $back-2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 20px 60px 20px;
+
+    h2 {
+        margin-bottom: 30px;
+    }
+
+    p {
+        text-align: center;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+
+    .tipos {
+
+        p {
+            line-height: 30px;
+            margin-bottom: 0px;
+        }
+
+        .tipo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border: 1px solid $line;
+            padding-bottom: 20px;
+
+            img {
+                max-width: 60px;
+                margin: 15px;
+            }
+
+            p {
+                padding: 0 12px;
+            }
+
+            p.rosa {
+                font-weight: 600;
+            }
+
+            .linha {
+                height: 1px;
+                width: 90%;
+                background-color: $line;
+                margin: 10px 5%;
+            }
+
+            .duracao {
+                margin-top: 20px;
+            }
+
+            .aviso {
+                color: #910150;
+                font-size: 12px;
+                line-height: 20px;
+                padding: 20px;
+            }
+        }
+    }
+}
+
+.faq {
+    background-color: $light;
+    display: flex;
+    justify-content: center;
+    //align-items: center;
+    flex-direction: column;
+    padding: 80px 20px 60px 20px;
+
+    h2 {
+        color: $secondary;
+    }
+
+    p {
+        line-height: 30px;
+    }
+
+    p.rosa {
+        font-weight: 600;
+        margin-top: 30px;
+    }
+}
+
+footer {
+    background-color: $tertiary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 40px;
+    color: $light;
+
+    .contato-footer {
+        p {
+            color: $light;
+            line-height: 30px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    }
+
+    .links-footer {
+        a {
+            color: $light;
+            transition: $transtion;
+
+            &:hover {
+                opacity: 1;
+                color: #8B86A0;
+            }
+        }
+
+        .icon-center {
+            margin: 0 20px;
+        }
+
+    }
+
+    .logo-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 20px;
+
+        img {
+            max-width: 60px;
+            margin-bottom: 5px;
+        }
+
+        h6 {
+            color: #8B86A0;
+        }
+    }
+}
+
+//========== TABLETS ========//
+
+@media (min-width: 768px) {
+    .hero {
+        height: 90vh;
+
+        .t1 {
+            padding: 100px 0 50px 200px;
+
+            h1 {
+                text-align: left;
+            }
+        }
+
+        .sub {
+            padding-right: 200px;
+            padding-bottom: 50px;
+        }
+    }
+
+    .apresentacao {
+        padding-right: 200px;
+    }
+
+    h2 {
+        font-size: 48px;
+    }
+
+    .hackear {
+        p {
+            padding-left: 150px;
+            padding-right: 150px;
+        }
+
+        .ciclos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+
+    .mitos-e-verdades {
+        p {
+            text-align: center;
+        }
+    }
+
+    .beneficios-conteudo {
+        align-items: flex-start;
+    }
+
+    .p1 {
+        padding-right: 200px;
+    }
+
+    .facilitadora {
+
+        .foto {
+            img {
+                max-width: 250px;
+            }
+        }
+
+        .citacao {
+            padding-right: 200px;
+        }
+    }
+}
+
+//========== DESKTOP ========//
+
+@media (min-width: 1100px) {
+    .hide-m {
+        display: block;
+    }
+
+    .hide-desk {
+        display: none;
+    }
+
+    .hero {
+        height: 100vh;
+
+        .text-hero {
+            flex-direction: row;
+        }
+
+        .t1 {
+            padding-left: 150px;
+            margin-top: -50px;
+            width: 50%;
+
+            h1 {
+                text-align: left;
+            }
+        }
+
+        .sub {
+            padding-right: 150px;
+            padding-bottom: 50px;
+            width: 50%;
+            margin: 50px 0 0 0;
+            border: none;
+
+            h3 {
+                border-left: 1px solid $light;
+                padding-left: 10px;
+            }
+        }
+    }
+
+    .apresentacao {
+        flex-direction: row;
+        justify-content: center;
+        padding: 60px 100px;
+
+        .sub-2 {
+            width: 50%;
+        }
+    }
+
+    .hackear {
+        padding-top: 70px;
+
+        p {
+            max-width: 450px;
+            padding: 0;
+        }
+
+        .ciclos {
+            flex-direction: row;
+        }
+    }
+
+    .mitos-e-verdades {
+        padding: 150px 0;
+
+        h2 {
+            max-width: 720px;
+            padding: 0;
+        }
+    }
+
+    .eixos {
+        .itens {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+            .item {
+                width: 33.3333%;
+
+                p.titulo {
+                    color: $primary;
+                }
+            }
+
+            .meio {
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+        }
+    }
+
+    .aprender {
+        .linha {
+            width: 50%;
+        }
+    }
+
+    .beneficios-conteudo {
+        flex-direction: row;
+
+        .beneficios,
+        .conteudo {
+            width: 50%;
+
+            .linha {
+                width: 75%;
+            }
+        }
+
+        .beneficios {
+            padding-left: 100px;
+
+            .p1 {
+                padding-right: 100px;
+            }
+        }
+    }
+
+    .facilitadora {
+        .maga {
+            display: inline-block;
+
+            .foto {
+                width: 70%;
+
+                img {
+                    width: 150px;
+                }
+            }
+
+            .conteudo-maga {
+                width: 50%;
+                margin-left: 600px;
+                margin-top: -200px;
+
+                .linha {
+                    width: 75%;
+                }
+            }
+        }
+    }
+
+    .formatos {
+
+        .tipos {
+            max-width: 1100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: baseline;
+
+            .tipo {
+                width: 33.33333%;
+            }
+
+            .tipo-1 {
+                padding-bottom: 97px;
+                padding-top: 2px;
+            }
+
+            .tipo-2 {
+                padding-bottom: 59px;
+                padding-top: 4px;
+            }
+        }
+    }
+
+    .faq {
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 1800px) {
+
+    .hero {
+        height: 80vh;
+
+        .t1 {
+            padding-left: 450px;
+        }
+
+        .sub {
+            padding-right: 450px;
+        }
+    }
+
+    .apresentacao {
+        padding: 50px 400px;
+    }
+
+    .aprender {
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+        .linha {
+            width: 35%;
+        }
+    }
+
+    .beneficios-conteudo {
+        .beneficios {
+            padding-left: 400px;
+
+            .linha {
+                width: 90%;
+            }
+        }
+
+        .conteudo {
+            .linha {
+                width: 50%;
+            }
+        }
+    }
+
+    .facilitadora {
+        .maga {
+
+            .foto {
+                width: 85%;
+
+                img {
+                    width: 150px;
+                }
+            }
+
+            .conteudo-maga {
+                width: 35%;
+                margin-left: 900px;
+                margin-top: -200px;
+
+                .linha {
+                    width: 75%;
+                }
+            }
+        }
+    }
+}

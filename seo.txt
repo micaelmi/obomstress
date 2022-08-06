@@ -1,0 +1,100 @@
+<!-- SEO -->
+    <link rel="canonical" href="https://obomstress.com.br/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Home | O Bom Stress" />
+    <meta property="og:url" content="https://obomstress.com.br/" />
+    <meta property="og:site_name" content="O Bom Stress" />
+    <meta property="article:publisher" content="https://www.facebook.com/obomstress" />
+    <meta property="article:modified_time" content="2021-01-23T20:26:53+00:00" />
+    <meta property="og:image"
+        content="https://obomstress.com.br/wp-content/uploads/2021/02/logo-obomstress-email.png" />
+    <meta property="og:image:width" content="122" />
+    <meta property="og:image:height" content="100" />
+    <meta property="og:image:type" content="image/png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@bom_stress" />
+
+    <link rel='dns-prefetch' href='//www.googletagmanager.com' />
+    <link rel='dns-prefetch' href='//s.w.org' />
+    <link rel='dns-prefetch' href='//pagead2.googlesyndication.com' />
+    <link rel='stylesheet' id='wp-block-library-css'
+        href='https://obomstress.com.br/wp-includes/css/dist/block-library/style.min.css?ver=5.8.3' type='text/css'
+        media='all' />
+    <link rel='stylesheet' id='oxygen-css'
+        href='https://obomstress.com.br/wp-content/plugins/oxygen/component-framework/oxygen.css?ver=3.9'
+        type='text/css' media='all' />
+    <script type='text/javascript' src='https://obomstress.com.br/wp-includes/js/jquery/jquery.min.js?ver=3.6.0'
+        id='jquery-core-js'></script>
+
+    <!-- Google Analytics snippet added by Site Kit -->
+    <script type='text/javascript' src='https://www.googletagmanager.com/gtag/js?id=UA-145835734-1'
+        id='google_gtagjs-js' async></script>
+    <script type='text/javascript' id='google_gtagjs-js-after'>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('set', 'linker', {
+            "domains": ["obomstress.com.br"]
+        });
+        gtag("js", new Date());
+        gtag("set", "developer_id.dZTNiMT", true);
+        gtag("config", "UA-145835734-1", {
+            "anonymize_ip": true
+        });
+    </script>
+
+    <!-- End Google Analytics snippet added by Site Kit -->
+    <link rel="https://api.w.org/" href="https://obomstress.com.br/wp-json/" />
+    <link rel="alternate" type="application/json" href="https://obomstress.com.br/wp-json/wp/v2/pages/18" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://obomstress.com.br/xmlrpc.php?rsd" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml"
+        href="https://obomstress.com.br/wp-includes/wlwmanifest.xml" />
+    <meta name="generator" content="WordPress 5.8.3" />
+    <link rel='shortlink' href='https://obomstress.com.br/' />
+    <link rel="alternate" type="application/json+oembed"
+        href="https://obomstress.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fobomstress.com.br%2F" />
+    <link rel="alternate" type="text/xml+oembed"
+        href="https://obomstress.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fobomstress.com.br%2F&#038;format=xml" />
+    <meta name="generator" content="Site Kit by Google 1.48.1" />
+    <script id="mcjs">
+        ! function (c, h, i, m, p) {
+            m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(
+                m, p)
+        }(document, "script",
+            "https://chimpstatic.com/mcjs-connected/js/users/eeac7c97959c20e6148b7738d/5909efc65a424ba8a7448dce4.js");
+    </script>
+    <meta name="google-site-verification" content="f8oy3omx_C-CdeHtR9LSLuncCZKCAFILW-jkkeuSTrg">
+    <!-- Google AdSense snippet added by Site Kit -->
+    <meta name="google-adsense-platform-account" content="ca-host-pub-2644536267352236">
+    <meta name="google-adsense-platform-domain" content="sitekit.withgoogle.com">
+    <!-- End Google AdSense snippet added by Site Kit -->
+
+    <!-- Google AdSense snippet added by Site Kit -->
+    <script async="async"
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1424229087098155"
+        crossorigin="anonymous" type="text/javascript"></script>
+
+    <!-- End Google AdSense snippet added by Site Kit -->
+    <link rel="icon" href="https://obomstress.com.br/wp-content/uploads/2021/01/cropped-favicon-32x32.png"
+        sizes="32x32" />
+    <link rel="icon" href="https://obomstress.com.br/wp-content/uploads/2021/01/cropped-favicon-192x192.png"
+        sizes="192x192" />
+    <link rel="apple-touch-icon"
+        href="https://obomstress.com.br/wp-content/uploads/2021/01/cropped-favicon-180x180.png" />
+    <meta name="msapplication-TileImage"
+        content="https://obomstress.com.br/wp-content/uploads/2021/01/cropped-favicon-270x270.png" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900|Source+Sans+Pro:100,200,300,400,500,600,700,800,900|Open+Sans:100,200,300,400,500,600,700,800,900|Lora:100,200,300,400,500,600,700,800,900"
+        rel="stylesheet">
+    <link rel='stylesheet' id='oxygen-cache-12-css'
+        href='//obomstress.com.br/wp-content/uploads/oxygen/css/main-12.css?cache=1614452434&#038;ver=5.8.3'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='oxygen-cache-18-css'
+        href='//obomstress.com.br/wp-content/uploads/oxygen/css/18.css?cache=1642253605&#038;ver=5.8.3' type='text/css'
+        media='all' />
+    <link rel='stylesheet' id='oxygen-universal-styles-css'
+        href='//obomstress.com.br/wp-content/uploads/oxygen/css/universal.css?cache=1642253605&#038;ver=5.8.3'
+        type='text/css' media='all' />

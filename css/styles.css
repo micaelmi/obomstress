@@ -1,0 +1,942 @@
+@charset "UTF-8";
+/*=========== RESET ==========*/
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  border: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*========== TEXT SELECTION ==========*/
+::-moz-selection {
+  color: #FFFFFF;
+  background: #E96199;
+}
+
+::selection {
+  color: #FFFFFF;
+  background: #E96199;
+}
+
+/*========== ESTILIZAÇÃO DA BARRA DE SCROLL ==========*/
+body::-webkit-scrollbar {
+  width: 14px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(192, 116, 116, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #E96199;
+  border-radius: 6px;
+  border: 2px solid #FFFFFF;
+}
+
+h1,
+h2 {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 32px;
+  color: #FFFFFF;
+  line-height: 39px;
+  padding: 5px 25px 15px 25px;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 36px;
+  color: #E96199;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+p {
+  font-weight: 400;
+  font-size: 18px;
+  color: #3b3c38;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.rosa {
+  color: #E96199;
+}
+
+.hide-m {
+  display: none;
+}
+
+.legenda {
+  font-size: 12px;
+  color: #ADABAB;
+}
+
+.video-fundo {
+  position: absolute;
+  z-index: -20;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+.video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+}
+
+.video-fundo::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  content: '';
+  z-index: -950;
+  background: rgba(73, 79, 155, 0.513);
+}
+
+.hero {
+  background: rgba(0, 0, 0, 0.7) url(../img/background.webp);
+  background-blend-mode: darken;
+  background-position: left center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 24px;
+  z-index: 1;
+  position: relative;
+}
+
+.text-hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 20px;
+}
+
+.inscrever {
+  background-color: #E96199;
+  color: #FFFFFF;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  padding: 12px 22px;
+  border-radius: 10px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  margin: 5px;
+}
+
+.inscrever:hover {
+  background-color: #FFFFFF;
+  color: #E96199;
+  border: 1px solid #E96199;
+}
+
+.sub {
+  border-left: 1px solid #FFFFFF;
+  padding: 0 10px;
+  margin: 25px;
+}
+
+.logo {
+  max-width: 150px;
+}
+
+.apresentacao {
+  background-color: #EFEDED;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sub-2 {
+  margin: 50px 30px 25px 30px;
+  padding: 0 10px 0 15px;
+  border-left: 1px solid #E96199;
+}
+
+.sub-2 p {
+  line-height: 30px;
+}
+
+.hackear {
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.hackear h2 {
+  text-align: center;
+  padding: 25px 0;
+}
+
+.hackear p {
+  padding: 0 20px 0 20px;
+  line-height: 30px;
+}
+
+.ciclos {
+  margin-bottom: 40px;
+}
+
+.ciclos img {
+  padding: 40px 40px 0 40px;
+}
+
+.mitos-e-verdades {
+  background-color: #23232D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 40px 0;
+}
+
+.mitos-e-verdades img {
+  max-width: 100px;
+}
+
+.mitos-e-verdades h2 {
+  padding: 20px 45px;
+  text-align: center;
+}
+
+.mitos-e-verdades p {
+  color: #FFFFFF;
+  font-family: "Lora", serif;
+  margin-top: 30px;
+  line-height: 30px;
+  padding: 0 35px;
+  text-align: center;
+}
+
+.eixos {
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 80px 0 40px 0;
+  text-align: center;
+}
+
+.eixos h2 {
+  padding: 0 30px;
+}
+
+.eixos .itens {
+  margin-bottom: 40px;
+}
+
+.eixos .itens .item {
+  margin-top: 50px;
+}
+
+.eixos .itens .item img {
+  max-width: 60px;
+}
+
+.eixos .itens .item p.titulo {
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 12px 0 4px 0;
+  color: #636360;
+}
+
+.aprender {
+  background-color: #23232D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 80px 0 60px 0;
+}
+
+.aprender h2 {
+  color: #FFFFFF;
+  text-align: center;
+  padding: 0 30px 20px 30px;
+}
+
+.aprender .linha {
+  height: 1px;
+  width: 90%;
+  background-color: #373743;
+  margin: 10px 30px;
+}
+
+.aprender p {
+  padding: 0 30px;
+  line-height: 30px;
+}
+
+.beneficios-conteudo {
+  background-color: #F7F7F7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 80px 30px 60px 30px;
+}
+
+.beneficios-conteudo .beneficios {
+  margin-bottom: 40px;
+}
+
+.beneficios-conteudo h2 {
+  margin-bottom: 40px;
+}
+
+.beneficios-conteudo p {
+  line-height: 30px;
+}
+
+.beneficios-conteudo .linha {
+  height: 1px;
+  width: 100%;
+  background-color: #DDDDDD;
+  margin: 10px 0;
+}
+
+.facilitadora {
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 80px 30px 60px 30px;
+}
+
+.facilitadora .foto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px;
+}
+
+.facilitadora .foto img {
+  max-width: 150px;
+}
+
+.facilitadora p.rosa {
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.facilitadora .linha {
+  height: 1px;
+  width: 100%;
+  background-color: #DDDDDD;
+  margin: 10px 0;
+}
+
+.facilitadora p {
+  line-height: 30px;
+}
+
+.facilitadora .citacao {
+  padding: 65px 20px 20px 10px;
+  font-family: "Lora", serif;
+  color: #706D6D;
+  font-size: 20px;
+}
+
+.formatos {
+  background-color: #F7F7F7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 80px 20px 60px 20px;
+}
+
+.formatos h2 {
+  margin-bottom: 30px;
+}
+
+.formatos p {
+  text-align: center;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.formatos .tipos p {
+  line-height: 30px;
+  margin-bottom: 0px;
+}
+
+.formatos .tipos .tipo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #DDDDDD;
+  padding-bottom: 20px;
+}
+
+.formatos .tipos .tipo img {
+  max-width: 60px;
+  margin: 15px;
+}
+
+.formatos .tipos .tipo p {
+  padding: 0 12px;
+}
+
+.formatos .tipos .tipo p.rosa {
+  font-weight: 600;
+}
+
+.formatos .tipos .tipo .linha {
+  height: 1px;
+  width: 90%;
+  background-color: #DDDDDD;
+  margin: 10px 5%;
+}
+
+.formatos .tipos .tipo .duracao {
+  margin-top: 20px;
+}
+
+.formatos .tipos .tipo .aviso {
+  color: #910150;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 20px;
+}
+
+.faq {
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 80px 20px 60px 20px;
+}
+
+.faq h2 {
+  color: #404040;
+}
+
+.faq p {
+  line-height: 30px;
+}
+
+.faq p.rosa {
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+footer {
+  background-color: #382F5B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px 40px;
+  color: #FFFFFF;
+}
+
+footer .contato-footer p {
+  color: #FFFFFF;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+footer .links-footer a {
+  color: #FFFFFF;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+footer .links-footer a:hover {
+  opacity: 1;
+  color: #8B86A0;
+}
+
+footer .links-footer .icon-center {
+  margin: 0 20px;
+}
+
+footer .logo-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px;
+}
+
+footer .logo-footer img {
+  max-width: 60px;
+  margin-bottom: 5px;
+}
+
+footer .logo-footer h6 {
+  color: #8B86A0;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    height: 90vh;
+  }
+  .hero .t1 {
+    padding: 100px 0 50px 200px;
+  }
+  .hero .t1 h1 {
+    text-align: left;
+  }
+  .hero .sub {
+    padding-right: 200px;
+    padding-bottom: 50px;
+  }
+  .apresentacao {
+    padding-right: 200px;
+  }
+  h2 {
+    font-size: 48px;
+  }
+  .hackear p {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  .hackear .ciclos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mitos-e-verdades p {
+    text-align: center;
+  }
+  .beneficios-conteudo {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .p1 {
+    padding-right: 200px;
+  }
+  .facilitadora .foto img {
+    max-width: 250px;
+  }
+  .facilitadora .citacao {
+    padding-right: 200px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .hide-m {
+    display: block;
+  }
+  .hide-desk {
+    display: none;
+  }
+  .hero {
+    height: 100vh;
+  }
+  .hero .text-hero {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .hero .t1 {
+    padding-left: 150px;
+    margin-top: -50px;
+    width: 50%;
+  }
+  .hero .t1 h1 {
+    text-align: left;
+  }
+  .hero .sub {
+    padding-right: 150px;
+    padding-bottom: 50px;
+    width: 50%;
+    margin: 50px 0 0 0;
+    border: none;
+  }
+  .hero .sub h3 {
+    border-left: 1px solid #FFFFFF;
+    padding-left: 10px;
+  }
+  .apresentacao {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 60px 100px;
+  }
+  .apresentacao .sub-2 {
+    width: 50%;
+  }
+  .hackear {
+    padding-top: 70px;
+  }
+  .hackear p {
+    max-width: 450px;
+    padding: 0;
+  }
+  .hackear .ciclos {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .mitos-e-verdades {
+    padding: 150px 0;
+  }
+  .mitos-e-verdades h2 {
+    max-width: 720px;
+    padding: 0;
+  }
+  .eixos .itens {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .eixos .itens .item {
+    width: 33.3333%;
+  }
+  .eixos .itens .item p.titulo {
+    color: #E96199;
+  }
+  .eixos .itens .meio {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .aprender .linha {
+    width: 50%;
+  }
+  .beneficios-conteudo {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .beneficios-conteudo .beneficios,
+  .beneficios-conteudo .conteudo {
+    width: 50%;
+  }
+  .beneficios-conteudo .beneficios .linha,
+  .beneficios-conteudo .conteudo .linha {
+    width: 75%;
+  }
+  .beneficios-conteudo .beneficios {
+    padding-left: 100px;
+  }
+  .beneficios-conteudo .beneficios .p1 {
+    padding-right: 100px;
+  }
+  .facilitadora .maga {
+    display: inline-block;
+  }
+  .facilitadora .maga .foto {
+    width: 70%;
+  }
+  .facilitadora .maga .foto img {
+    width: 150px;
+  }
+  .facilitadora .maga .conteudo-maga {
+    width: 50%;
+    margin-left: 600px;
+    margin-top: -200px;
+  }
+  .facilitadora .maga .conteudo-maga .linha {
+    width: 75%;
+  }
+  .formatos .tipos {
+    max-width: 1100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .formatos .tipos .tipo {
+    width: 33.33333%;
+  }
+  .formatos .tipos .tipo-1 {
+    padding-bottom: 97px;
+    padding-top: 2px;
+  }
+  .formatos .tipos .tipo-2 {
+    padding-bottom: 59px;
+    padding-top: 4px;
+  }
+  .faq {
+    max-width: 1100px;
+    margin: auto;
+  }
+  footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (min-width: 1800px) {
+  .hero {
+    height: 80vh;
+  }
+  .hero .t1 {
+    padding-left: 450px;
+  }
+  .hero .sub {
+    padding-right: 450px;
+  }
+  .apresentacao {
+    padding: 50px 400px;
+  }
+  .aprender {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .aprender .linha {
+    width: 35%;
+  }
+  .beneficios-conteudo .beneficios {
+    padding-left: 400px;
+  }
+  .beneficios-conteudo .beneficios .linha {
+    width: 90%;
+  }
+  .beneficios-conteudo .conteudo .linha {
+    width: 50%;
+  }
+  .facilitadora .maga .foto {
+    width: 85%;
+  }
+  .facilitadora .maga .foto img {
+    width: 150px;
+  }
+  .facilitadora .maga .conteudo-maga {
+    width: 35%;
+    margin-left: 900px;
+    margin-top: -200px;
+  }
+  .facilitadora .maga .conteudo-maga .linha {
+    width: 75%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
